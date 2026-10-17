@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main class="container">
+  <div class="detail-card">
+    <h1><%= menu.nama %></h1>
+    <span class="badge"><%= menu.kategori %></span>
+    <h3>Harga: Rp <%= menu.harga.toLocaleString('id-ID') %></h3>
+    <p><%= menu.deskripsi %></p>
+    <a href="/" class="btn-back">&larr; Kembali ke Daftar Menu</a>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

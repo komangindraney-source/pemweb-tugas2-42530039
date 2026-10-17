@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<main class="container">
+  <h1>Daftar Menu Kafe</h1>
+  <% if (selectedKategori) { %>
+    <p>Menampilkan kategori: <strong><%= selectedKategori %></strong> (<a href="/">Reset Filter</a>)</p>
+  <% } %>
+
+  <div class="menu-grid">
+    <% if (menus.length > 0) { %>
+      <% menus.forEach(item => { %>
+        <div class="card">
+          <h3><%= item.nama %></h3>
+          <p class="kategori">Kategori: <%= item.kategori %></p>
+          <p class="harga">Rp <%= item.harga.toLocaleString('id-ID') %></p>
+          <a href="/menu/<%= item.id %>" class="btn">Lihat Detail</a>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>Tidak ada menu dalam kategori ini.</p>
+    <% } %>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
