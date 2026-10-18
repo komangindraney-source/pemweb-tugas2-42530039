@@ -11,6 +11,9 @@
     <% if (menus.length > 0) { %>
       <% menus.forEach(item => { %>
         <div class="card">
+          <!-- Tambahkan baris tag img ini di atas <h3> -->
+          <img src="<%= item.gambar %>" alt="<%= item.nama %>" class="menu-img">
+
           <h3><%= item.nama %></h3>
           <p class="kategori">Kategori: <%= item.kategori %></p>
           <p class="harga">Rp <%= item.harga.toLocaleString('id-ID') %></p>

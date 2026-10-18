@@ -3,6 +3,9 @@
 
 <main class="container">
   <div class="detail-card">
+    <!-- TAMBAHKAN BARIS TAG GAMBAR INI -->
+    <img src="<%= menu.gambar %>" alt="<%= menu.nama %>" class="detail-img">
+
     <h1><%= menu.nama %></h1>
     <span class="badge"><%= menu.kategori %></span>
     <h3>Harga: Rp <%= menu.harga.toLocaleString('id-ID') %></h3>
