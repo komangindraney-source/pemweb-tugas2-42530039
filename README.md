@@ -3,4 +3,4 @@
 - **Tema Pilihan**: Tema A (Daftar Menu Kafe)
 - **NIM**: 42530039
 - **Tautan Repositori** :https://github.com/[username-github-anda]/pemweb-tugas2-42530039
-- **Tautan Video YouTube**:
+- **Tautan Video YouTube**:<https://youtu.be/Zn8a3LIHHNk>
